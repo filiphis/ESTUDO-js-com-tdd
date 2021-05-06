@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "lint": "./node_modules/.bin/eslint src/*.js",
+    "prepare": "husky install",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-
   "repository": {
     "type": "git",
     "url": "git+https://github.com/filiphis/ESTUDO-js-com-tdd.git"
@@ -28,11 +28,5 @@
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-plugin-import": "^2.22.1",
     "husky": "^6.0.0"
-  },
-  "husky": {
-    "hooks": {
-      "pre-push": "npm run lint",
-      "prepush": "npm run lint"
-    }
   }
 }
