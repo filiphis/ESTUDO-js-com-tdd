@@ -4,7 +4,13 @@
   "description": "Estudando testes com javascript no curso JS COM TDD NA PRATICA - Willian Justen",
   "main": "index.js",
   "scripts": {
+    "lint": "./node_modules/.bin/eslint src/*.js",
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-push": "npm run lint"
+    }
   },
   "repository": {
     "type": "git",
@@ -20,5 +26,11 @@
   "bugs": {
     "url": "https://github.com/filiphis/ESTUDO-js-com-tdd/issues"
   },
-  "homepage": "https://github.com/filiphis/ESTUDO-js-com-tdd#readme"
+  "homepage": "https://github.com/filiphis/ESTUDO-js-com-tdd#readme",
+  "devDependencies": {
+    "eslint": "^7.25.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "husky": "^6.0.0"
+  }
 }
