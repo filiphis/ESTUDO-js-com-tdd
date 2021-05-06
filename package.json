@@ -1,0 +1,24 @@
+{
+  "name": "estudo-js-com-tdd",
+  "version": "1.0.0",
+  "description": "Estudando testes com javascript no curso JS COM TDD NA PRATICA - Willian Justen",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/filiphis/ESTUDO-js-com-tdd.git"
+  },
+  "keywords": [
+    "test",
+    "js",
+    "tdd"
+  ],
+  "author": "Luiz Felipe da Silveira",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/filiphis/ESTUDO-js-com-tdd/issues"
+  },
+  "homepage": "https://github.com/filiphis/ESTUDO-js-com-tdd#readme"
+}
