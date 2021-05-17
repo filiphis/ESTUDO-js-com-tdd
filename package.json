@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "lint": "./node_modules/.bin/eslint src/*.js",
-    "prepare": "husky install",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "./node_modules/.bin/mocha src/**/*.spec.js --require babel-register",
+    "test:tdd": "./node_modules/.bin/mocha src/**/*.spec.js --require babel-register --watch"
   },
   "repository": {
     "type": "git",
@@ -24,9 +24,13 @@
   },
   "homepage": "https://github.com/filiphis/ESTUDO-js-com-tdd#readme",
   "devDependencies": {
+    "babel-preset-env": "^1.7.0",
+    "babel-register": "^6.26.0",
+    "chai": "^4.3.4",
     "eslint": "^7.25.0",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-plugin-import": "^2.22.1",
-    "husky": "^6.0.0"
+    "husky": "^6.0.0",
+    "mocha": "^8.4.0"
   }
 }
